@@ -43,6 +43,6 @@ app.post("/call", async (req, res) => {
     ],
   });
 
-  const PORT = 8000;
+  const PORT = 7777;
   app.listen(PORT, () => console.log(`✅ API сервер запущен на http://localhost:${PORT}`));
 })();
