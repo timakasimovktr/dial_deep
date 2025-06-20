@@ -23,6 +23,15 @@
         </div>
       </div>
     </main>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const number = urlParams.get("number");
+        if (number) {
+          document.getElementById("target-number").value = number;
+        }
+      });
+    </script>
 
     <script src="sip-config.js"></script>
     <script src="audio-processor.js"></script>
