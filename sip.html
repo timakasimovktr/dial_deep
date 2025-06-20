@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC звонок</title>
+    <link type="text/css" rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jssip@3.0.0/dist/jssip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.0/lame.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="page">
+        <div class="audioWrapper">
+          <h1>Dial Deep x Phoenix Core Lab</h1>
+          <input
+            type="text"
+            id="target-number"
+            placeholder="Введите номер для звонка"
+            class="phoneInput"
+          />
+          <button class="callButton" id="start-call">Позвонить</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="sip-config.js"></script>
+    <script src="audio-processor.js"></script>
+    <script src="event-handlers.js"></script>
+  </body>
+</html>
